@@ -11,15 +11,17 @@ Has I/O gain sliders, HPF and LPF, and up to 8 peaking bands.
 
 ## Build (Windows, CLI + Visual Studio)
 1) Clone and enter the project
+   ```bash
    git clone https://github.com/LF92R/JuceEQ.git
    cd JuceEQ
 
-2) Generate a VS 2022 solution in ./build
+3) Generate a VS 2022 solution in ./build
+   ```bash
    cmake -S . -B build -G "Visual Studio 17 2022" -A x64
 
-3) Open the solution and run
+5) Open the solution and run (In Visual Studio: choose Debug or Release, then press F5 to run the Standalone target)
+   ```bash
    start build\JuceEQ.sln
-   // In Visual Studio: choose Debug or Release, then press F5 to run the Standalone target
 
 Note: First configure needs internet (JUCE is fetched via CPM).
 
