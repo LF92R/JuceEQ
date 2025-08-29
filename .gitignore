@@ -11,9 +11,30 @@ CTestTestfile.cmake
 _deps
 CMakeUserPresets.json
 
-# CLion
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#cmake-build-*
+# VS and Windows noise
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+ipch/
+.ipch/
+Thumbs.db
+Desktop.ini
+
+# Build outputs (keep source-only repo)
+build/
+build-*/
+bin/
+obj/
+out/
+
+# Ninja or alt generators (harmless if unused)
+*.ninja
+.ninja_deps
+.ninja_log
+
+# CMake extras
+CMakeSettings.json
+
