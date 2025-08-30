@@ -1,10 +1,10 @@
 #pragma once
 #include <juce_gui_basics/juce_gui_basics.h>
 
-// Provide an AppLookAndFeel alias so editor code can declare `AppLookAndFeel lnf;`
+// Provides an AppLookAndFeel alias so the plugin editor can declare "AppLookAndFeel lnf;"
 using AppLookAndFeel = juce::LookAndFeel_V4;
 
-// Basic rotary knob look-and-feel 
+// Basic rotary knob 
 // Used by BandControls
 struct KnobLNF : public juce::LookAndFeel_V4
 {
