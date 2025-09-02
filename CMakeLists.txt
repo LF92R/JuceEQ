@@ -55,8 +55,6 @@ target_sources(JuceEQ PRIVATE
   Source/BandControlsComponent.h
   Source/LookAndFeel.cpp
   Source/LookAndFeel.h
-  #Source/Meters.cpp
-  #Source/Meters.h
 )
 
 target_link_libraries(JuceEQ PRIVATE
