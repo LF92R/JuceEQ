@@ -1,5 +1,5 @@
 #include "PluginProcessor.h"
-// DO NOIT include PluginEditor.h 
+// DO NOT include PluginEditor.h 
 class JuceEQAudioProcessorEditor;
 extern juce::AudioProcessorEditor* createEQEditor(JuceEQAudioProcessor&);
 

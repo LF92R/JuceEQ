@@ -205,7 +205,8 @@ void EqGraphComponent::paint(juce::Graphics& graphics)
         {
             const float x = xForFreq(freqHz[i], eqGridspace);
             const float y = yForDb(juce::Decibels::gainToDecibels(std::max(1.0e-12, magLinear[i])), eqGridspace);
-            if (i == 0) p.startNewSubPath(x, y); else p.lineTo(x, y);
+            if (i == 0) 
+                p.startNewSubPath(x, y); else p.lineTo(x, y);
         }
         graphics.setColour(eqCurveCol);
         graphics.strokePath(p, juce::PathStrokeType(2.0f));

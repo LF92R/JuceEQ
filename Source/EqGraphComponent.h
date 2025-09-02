@@ -7,7 +7,7 @@ class JuceEQAudioProcessor;
 
 /**
  * Renders the EQ filter curve and grid labels.
- * Sampling is adaptive: starts with a log-spaced baseline and adds
+ * Starts with a log-spaced baseline set of EQ curve points and adds 
  * extra points around local extrema so high-Q peaks/notches are drawn accurately.
  */
 class EqGraphComponent : public juce::Component, private juce::Timer

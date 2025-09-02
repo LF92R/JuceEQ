@@ -3,17 +3,17 @@
 
 void KnobLNF::drawRotarySlider(juce::Graphics& sldrGraphics,
 	int x, int y, int width, int height,
-	float pos, float start, float end, // start, end in radians
-	juce::Slider& s)
+	float sliderPosNormalized, float rotaryStartAngle, float rotaryEndAngle, // rotaryStartAngle, rotaryEndAngle in radians
+	juce::Slider& slider)
 {
 	// Knob is a circle with bar indicating the knob position
-	juce::ignoreUnused(s);
+	juce::ignoreUnused(slider);
 	auto knobBounds = juce::Rectangle<float>((float)x, (float)y, (float)width, (float)height).reduced(6.0f);
 	auto knobRadius = juce::jmin(knobBounds.getWidth(), knobBounds.getHeight()) * 0.5f;
 	auto knobCenter = knobBounds.getCentre();
 	auto centerX = knobCenter.x;
 	auto centerY = knobCenter.y;
-	auto knobAngle = start + pos * (end - start);
+	auto knobAngle = rotaryStartAngle + sliderPosNormalized * (rotaryEndAngle - rotaryStartAngle);
 
 	// Knob background
 	sldrGraphics.setColour(juce::Colours::darkgrey);

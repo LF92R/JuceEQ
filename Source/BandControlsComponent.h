@@ -32,8 +32,8 @@ struct BandRow : public juce::Component
     KnobWithLabel gain{ "Gain", false };
 
     // For APVTS attachments
-    std::unique_ptr<juce::AudioProcessorValueTreeState::ButtonAttachment>  enableAttach;
-    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment>  freqAttach, qAttach, gainAttach;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::ButtonAttachment> enableAttach;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> freqAttach, qAttach, gainAttach;
 
 private:
     int index = 1;

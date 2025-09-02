@@ -4,8 +4,7 @@
 // Provides an AppLookAndFeel alias so the plugin editor can declare "AppLookAndFeel lnf;"
 using AppLookAndFeel = juce::LookAndFeel_V4;
 
-// Basic rotary knob 
-// Used by BandControls
+// Basic rotary knob used by BandControlsComponent
 struct KnobLNF : public juce::LookAndFeel_V4
 {
     KnobLNF() = default;
