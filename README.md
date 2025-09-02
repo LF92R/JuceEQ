@@ -1,7 +1,8 @@
 # JuceEQ
 
-Parametric EQ built with JUCE. Works as a standalone app for Windows for now. 
+Parametric EQ built with JUCE (WIP). Works as a standalone app for Windows for now. 
 Has I/O gain sliders, HPF and LPF, and up to 8 peaking bands.
+Later features to add include RMS meters for input and output, live spectrum analyzer, plugin bypass, clipping warnings, limiter, and more. 
 
 ## Requirements
 - Windows with Visual Studio 2022
@@ -26,4 +27,4 @@ Has I/O gain sliders, HPF and LPF, and up to 8 peaking bands.
 Note: First configure needs internet (JUCE is fetched via CPM).
 
 ## License
-All rights reserved. Source available to reviewers on request.
+All rights reserved. 
